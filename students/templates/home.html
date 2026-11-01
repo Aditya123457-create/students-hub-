@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="welcome">
+    <h1>Welcome back, Aditya! 👋</h1>
+    <p>Keep learning, keep growing. Here's your learning overview.</p>
+    <a href="/courses/" class="btn btn-light">
+        Explore Courses
+    </a>
+</div>
+
+<div class="stats">
+
+    <div class="card">
+        <p class="muted">Enrolled Courses</p>
+        <div class="stat-number">04</div>
+        <p class="muted">Courses you're learning</p>
+    </div>
+
+    <div class="card">
+        <p class="muted">Pending Assignments</p>
+        <div class="stat-number">08</div>
+        <p class="muted">Tasks to complete</p>
+    </div>
+
+    <div class="card">
+        <p class="muted">Upcoming Classes</p>
+        <div class="stat-number">03</div>
+        <p class="muted">Classes this week</p>
+    </div>
+
+    <div class="card">
+        <p class="muted">Learning Progress</p>
+        <div class="stat-number">72%</div>
+        <p class="muted">Overall progress</p>
+    </div>
+
+</div>
+
+<h2 class="section-title">My Courses</h2>
+
+<div class="course-grid">
+
+    <div class="course-card">
+        <div class="course-icon">🐍</div>
+        <h3>Python Programming</h3>
+        <p class="muted">Programming fundamentals</p>
+
+        <div class="progress">
+            <div class="progress-fill" style="width:65%"></div>
+        </div>
+
+        <p class="muted">65% completed</p>
+        <a href="/courses/1/" class="btn">Continue Learning</a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-icon">🌐</div>
+        <h3>Django Development</h3>
+        <p class="muted">Build web applications</p>
+
+        <div class="progress">
+            <div class="progress-fill" style="width:35%"></div>
+        </div>
+
+        <p class="muted">35% completed</p>
+        <a href="/courses/2/" class="btn">Continue Learning</a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-icon">💻</div>
+        <h3>Web Development</h3>
+        <p class="muted">HTML and CSS basics</p>
+
+        <div class="progress">
+            <div class="progress-fill" style="width:80%"></div>
+        </div>
+
+        <p class="muted">80% completed</p>
+        <a href="/courses/3/" class="btn">Continue Learning</a>
+    </div>
+
+</div>
+
+<div class="two-columns">
+
+    <div class="card">
+        <h2>Today's Tasks</h2>
+
+        <div class="task">☐ Complete Python assignment</div>
+        <div class="task">☐ Revise Django templates</div>
+        <div class="task">☐ Complete HTML practice</div>
+        <div class="task">☐ Review course materials</div>
+
+        <a href="/students/assignments/" class="btn">
+            View All Assignments
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Upcoming Classes</h2>
+
+        <div class="task">
+            <strong>Python Programming</strong>
+            <p class="muted">Monday · 10:00 AM</p>
+        </div>
+
+        <div class="task">
+            <strong>Django Development</strong>
+            <p class="muted">Tuesday · 11:30 AM</p>
+        </div>
+
+        <div class="task">
+            <strong>Web Development</strong>
+            <p class="muted">Wednesday · 2:00 PM</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

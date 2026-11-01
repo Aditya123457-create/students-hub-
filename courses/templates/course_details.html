@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="welcome">
+    <h1>Course Details</h1>
+    <p>Explore your course information and learning roadmap.</p>
+</div>
+
+<div class="card">
+
+    <span class="badge">Course Information</span>
+
+    <h2 style="margin-top:15px;">
+        Course ID: {{ course_id }}
+    </h2>
+
+    <p class="muted" style="margin-top:10px;">
+        Welcome to your selected course.
+        Start learning and improve your technical skills.
+    </p>
+
+    <div class="stats" style="margin-top:25px;">
+
+        <div>
+            <h2>18</h2>
+            <p class="muted">Total Lessons</p>
+        </div>
+
+        <div>
+            <h2>Beginner</h2>
+            <p class="muted">Difficulty Level</p>
+        </div>
+
+        <div>
+            <h2>4 Weeks</h2>
+            <p class="muted">Duration</p>
+        </div>
+
+        <div>
+            <h2>65%</h2>
+            <p class="muted">Progress</p>
+        </div>
+
+    </div>
+
+    <h3 class="section-title">Course Progress</h3>
+
+    <div class="progress">
+        <div class="progress-fill" style="width:65%"></div>
+    </div>
+
+    <p class="muted">12 out of 18 lessons completed</p>
+
+    <a href="/courses/lessons/" class="btn">
+        Start Learning
+    </a>
+
+    <a href="/courses/" class="btn btn-light">
+        Back to Courses
+    </a>
+
+</div>
+
+<div class="card">
+
+    <h2>What You Will Learn</h2>
+
+    <div class="task">
+        <h3>01. Fundamentals</h3>
+        <p class="muted">Understand the basic concepts.</p>
+    </div>
+
+    <div class="task">
+        <h3>02. Core Concepts</h3>
+        <p class="muted">Learn important topics and techniques.</p>
+    </div>
+
+    <div class="task">
+        <h3>03. Practical Exercises</h3>
+        <p class="muted">Apply your knowledge through practice.</p>
+    </div>
+
+    <div class="task">
+        <h3>04. Final Project</h3>
+        <p class="muted">Build a project using what you learned.</p>
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>Course Resources</h2>
+
+    <div class="task">
+        📄 Course Notes
+        <span class="badge">Available</span>
+    </div>
+
+    <div class="task">
+        📝 Practice Exercises
+        <span class="badge">Available</span>
+    </div>
+
+    <div class="task">
+        🎯 Final Assessment
+        <span class="badge badge-orange">Upcoming</span>
+    </div>
+
+</div>
+
+{% endblock %}
